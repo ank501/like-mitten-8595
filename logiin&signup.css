@@ -1,0 +1,85 @@
+body{
+    font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif; 
+}
+#logo{
+    width: 50%;
+    margin: auto;
+    padding-left: 80px;
+  
+}
+
+.frame{
+
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+
+}
+#imgdiv{
+
+   display: flex;
+   justify-content: space-evenly;
+   
+}
+#imgdiv div{
+  width: 18%;
+  margin: auto;
+
+  padding-left: 10px;
+}
+#imgdiv>div>p{
+   text-align: center;
+   width: 40%;
+}
+#imgdiv>div>img{
+    width: 50%;
+    margin: auto;
+}
+#button{
+    background-color :#00bf6f;
+   color: rgb(255, 255, 255);
+   font-size:small;
+   padding: 10px 20px;
+   border: 0px;
+   border-radius: 2px;
+   margin-bottom: 5px;
+   font-weight: bold;
+   margin-top: 10px;
+}
+.hov:hover{
+  
+  
+   
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+.enteremail{
+    height: 40px;
+   font-size:small;
+   border: 1px solid gray;
+   border-radius: 2px;
+   margin-bottom: 5px;
+   
+}
+.corner{
+    border-radius: 10px;
+}
+
+.logo{
+    width: 18%;
+}
+.fullwidth{
+  width: 100%;
+}
+.opac{
+    opacity: 50%;
+}
+.frame>h4{
+    margin-bottom: 10px;
+}
+#pa{
+    display: flex;
+    justify-content: flex-end;
+}
