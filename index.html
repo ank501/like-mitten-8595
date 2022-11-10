@@ -5,238 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Familiar Dolphin</title>
-    <style>
-        #Footer{
-            width: 80%;
-            margin: auto;
-        }
-        #Footer>p{
-            width: 60%;
-            text-align: center;
-            margin: auto;
-            font-size: x-small;
-           color: gray;
-            line-height: 20px;
-        }
-        .disFlex{
-            display: flex;
-            justify-content: space-between;
-        }
-        #footerLeft{
-            width: 30%;
-            font-size: x-small;
-           
-            line-height: 15px;
-        }
-
-        #footerLeft>select{
-           background-color: black;
-           color: white;
-           font-size: x-small;
-           padding: 5px 10px;
-           border: 0px;
-           border-radius: 2px;
-           margin-bottom: 5px;
-        }
-
-        #footerRight{
-            width: 30%;
-            padding: 20px;
-            display: flex;
-           
-        }
-        #footerRight>img{
-            width: 40%;
-            height: 40%;
-
-          
-        }
-        #footerline{
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-        #footerTable{
-            text-align: left;
-            margin-top: 20px;
-            
-        }
-        #footerTable tr {
-            font-size: x-small;
-            color: grey;
-           
-        }
-
-        #Nav{
-            font-size: smaller;
-            display: flex;
-            justify-content: space-evenly;
-            width: 100%;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-        }
-        #Nav *{
-            margin: 0px;
-            padding: 0px;
-            font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
-            display:flex ;
-            flex-direction: row;
-        }
-      
-        #Nav div a{
-         text-decoration: none;
-         color: black;
-         margin-top: 5px;
-         
-        }
-        #Nav>div>div{
-           padding: 4px , 8px;
-           margin-left: 10px;
-           margin-right: 10px;
-           font-weight: bold;
-           color: black;
-           font-size: x-small;
-           font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
-          
-        }
-        #Nav>div{
-          width: 50%;
-          margin: 10px;
-        }
      
-        #Nav button{
-           
-           background-color: rgb(255, 191, 0);
-           color: rgb(31, 31, 31);
-           font-size: x-small;
-           padding: 8px 16px;
-           border: 0px;
-           border-radius: 2px;
-           margin-bottom: 5px;
-           font-weight: bold;
-
-         
-        }
-        #logo{
-          width: 15%;
-        
-        }
-        #Mid>h3{
-            font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
-            text-align: center;
-            margin-top: 60px;
-            opacity: 90%;
-            margin-bottom: 40px;
-        }
-        #Mid>p{
-            font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
-            text-align: center;
-            opacity: 80%;
-        }
-        h2 {
-            text-align: center;
-         font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
-        }
-        h3{
-           
-            text-align: center;
-         font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
-        
-        }
-        
-        #Mid>h4 ,#Bottom>div>div{
-         text-align: center;
-         font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
-        }
-        #Mid>h4+div{
-            width: 80%;
-            margin: auto;
-            display: flex;
-            justify-content: space-evenly;
-            margin-bottom: 70px;
-        }
-        #Mid>h4+div>img{
-            width: 17%;
-            margin-top: 20px;
-        }
-
-        #learn{
-            height: 100%;
-            position: relative;
-            text-align: center;
-        }
-        #learn h4{
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: small;
-            color: white;
-         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-        #learn p{
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -40%);
-            font-size: x-small;
-            color: white;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            width: 40%;
-           opacity: 90%;
-           line-height: 20px;
-        }
-        #learn>button{
-            background-color: white;
-           color: rgb(0, 0, 0);
-           font-size: x-small;
-           padding: 5px 10px;
-           border: 0px;
-           border-radius: 2px;
-           position: absolute;
-            top: 70%;
-            left: 50%;
-            transform: translate(-50%, -40%);
-          
-        }
-
-        #Bottom>div{
-            width: 80%;
-            margin: auto;
-            display: flex;
-            justify-content: space-evenly;
-            text-align: center;
-            padding: 50px;
-            background-color: #f7f7f7;
-
-        }
-        #Bottom>div>div>img{
-            width: 30%;
-            margin: auto;
-            text-align: center;
-      
-        }
-        #Bottom>div>div>p{
-            width: 70%;
-            margin: auto;
-            text-align: center;
-            font-size: small;
-            line-height: 20px;
-            margin-bottom: 35px;
-        }
-        #Bottom>div>div>button{
-         
-            background-color: white;
-           
-            border-radius: 2px;
-            border: 1px solid black;
-            font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
-            font-size: x-small;
-            padding: 10px ,20px;
-        }
-       
-        
-
-
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div id="Nav">
@@ -254,8 +24,8 @@
             <div><a href="#"> Plan&Pricing </a></div>
             <div> <a href="#">Help&support </a></div>
             <div>  <a href="#"> Company </a></div>
-           <div> <a href="#">log in</a></div>
-            <button>Signup for free</button>
+           <div id="login"> <a href="#">log in</a></div>
+            <button id="signup"> Signup for free</button>
         </div>
            
 
@@ -368,3 +138,13 @@
     </div>
 </body>
 </html>
+<script>
+    document.querySelector("#signup").addEventListener("click" , function(){
+        window.location.href="signup.html"
+    })
+    document.querySelector("#login").addEventListener("click" , function(){
+        window.location.href="login.html"
+    })
+    
+    
+</script>

@@ -1,0 +1,132 @@
+*{
+    font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif; 
+}
+#nav{
+    height: 20px;
+    background-color: #404040;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 8px;
+    color: white;
+}
+#nav>div:nth-child(1){
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4px;
+ }
+#nav>div:nth-child(2){
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+#menuicon{
+   width: 30%;
+   display: flex;
+   justify-content: space-evenly;
+}
+#menuicon>div:nth-child(2)>img{
+   width: 80%;
+}
+#nav>div>div{
+    width: 23%;
+    font-size: x-small;
+    font-weight: bold;
+}   
+.fullwidth{
+    width: 100%;
+}
+#upgrade{
+    background-color: rgb(255, 191, 0);
+   color: rgb(31, 31, 31);
+   font-size: x-small;
+   padding: 4px 8px;
+   border: 0px;
+   border-radius: 2px;
+   margin-right: 10px;
+   font-weight: bold;
+}
+#survey{
+    background-color: rgb(255, 255, 255);
+   color: rgb(31, 31, 31);
+   font-size: x-small;
+   padding: 4px 8px;
+   border: 0px;
+   border-radius: 2px;
+   margin-right: 10px;
+   font-weight: bold;
+}
+
+/* body css  */
+
+#container{
+    height: 600px;
+    background-color: rgb(244, 239, 239);
+}
+#body{
+   width: 60%;
+   margin: auto;
+   border: 1px solid black;
+}
+#responsediv{
+    display: flex;
+    justify-content:space-between;
+    margin-top:30px ;
+}
+#responsediv>div{
+    height: 20px;
+    width: 23%;
+    background-color: white;
+}
+#buy{
+    background-color: rgb(232, 199, 77) ;
+    border-radius: 2px;
+   color: rgb(0, 0, 0);
+    border: 0px;
+   
+}
+.back-white{
+    background-color: white;
+}
+.hov:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    
+}
+
+
+
+/* footer css  */
+#footer{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#footerRight{
+    width: 30%;
+    padding-left: 20px;
+    display: flex;
+   
+}
+#footerRight>img{
+    width: 20%;
+    height: 20%;
+    margin-right: 20px;
+}
+#footer>p{
+    font-size: x-small;
+    color: grey;
+    padding-left: 20px;
+}
+
+    #footer>select{
+   background-color:#404040;
+   color: white;
+   font-size: x-small;
+   padding: 5px 10px;
+   border: 0px;
+   border-radius: 2px;
+   margin-bottom: 5px;
+  margin-left: 20px;
+}
