@@ -2,7 +2,7 @@
     font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif; 
 }
 #nav{
-    height: 20px;
+    height: 30px;
     background-color: #404040;
     display: flex;
     justify-content: space-between;
@@ -61,23 +61,26 @@
 /* body css  */
 
 #container{
-    height: 600px;
+    
     background-color: rgb(244, 239, 239);
 }
 #body{
-   width: 60%;
+   width: 90%;
+   height: auto;
    margin: auto;
-   border: 1px solid black;
+
 }
 #responsediv{
     display: flex;
     justify-content:space-between;
     margin-top:30px ;
 }
+
 #responsediv>div{
     height: 20px;
     width: 23%;
     background-color: white;
+    margin-top:30px ;
 }
 #buy{
     background-color: rgb(232, 199, 77) ;
@@ -93,8 +96,27 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     
 }
-
-
+  /* bottom css  */
+#bottom{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  
+}
+#bottom>div>div{
+    background-color: white;
+    padding: 10px;
+}
+#upgradeButton{
+    background-color: rgb(255, 191, 0);
+    color: rgb(31, 31, 31);
+    font-size: x-small;
+    padding: 4px 8px;
+    border: 0px;
+    border-radius: 2px;
+    margin-right: 10px;
+    font-weight: bold;
+}
 
 /* footer css  */
 #footer{
