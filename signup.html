@@ -15,11 +15,11 @@
             <div class="frame">
                 <div id="pa"><p>Already have an account? <a href="login.html">LogIn</a></p></div>
                     
-                <h2>Create an account</h2>
+                <h2>Create an account </h2>
                 <h4>Email address</h4>
-                <input id="email" class="fullwidth enteremail hov" type="text" placeholder="Enter your Email"/>
+                <input id="email" class="fullwidth enteremail hov" type="email" placeholder="Enter your Email"/>
                 <h4>Password</h4>
-                <input id="password" class="fullwidth enteremail hov" type="text" placeholder="Enter your Password"/>
+                <input id="password" class="fullwidth enteremail hov" type="password" placeholder="Enter your Password"/>
                 
                
                 <button  class="fullwidth hov" id="button">Create Account</button>
@@ -61,9 +61,29 @@
 
 //   Signup functionalities
 
+document.querySelector("button").addEventListener("click",addUser)
+let user = JSON.parse(localStorage.getItem("user-data")) || [] ;
+function addUser(){
 
 let email = document.querySelector("#email").value;
 let pass = document.querySelector("#password").value;
+
+let obj = {email , pass}
+
+if(email == "" || pass ==""){
+  alert("Fill All Data")
+}else{
+  user.push(obj)
+localStorage.setItem("user-data" , JSON.stringify(user))
+setTimeout(function(){
+  window.location.href="login.html"
+
+},1000)
+
+}
+}
+
+
 
 
 

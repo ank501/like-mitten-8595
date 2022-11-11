@@ -18,9 +18,9 @@
             
         
             <h4>Email address</h4>
-            <input class="fullwidth enteremail hov" type="text" placeholder="Enter your Email">
+            <input class="fullwidth enteremail hov" type="email" placeholder="Enter your Email" id="enterEmail">
             <h4>Password</h4>
-            <input class="fullwidth enteremail hov" type="password" placeholder="Enter ypur Password">
+            <input class="fullwidth enteremail hov" type="password" placeholder="Enter ypur Password" id="enterPass">
             
             <button class="fullwidth hov" id="button">LogIn</button>
             <hr>
@@ -58,6 +58,41 @@
 </body>
 </html>
 <script>
+
+   //signIn functionalitis
+   let user = JSON.parse(localStorage.getItem("user-data")) || [] ;
+
+   document.querySelector("#button").addEventListener("click" ,logIn);
+
+   function logIn(){
+    let matchedData = false ;
+    user.forEach(element => {
+      let email1 = element.email ;
+      let pass = element.pass;
+
+      let enteredEmail = document.querySelector("#enterEmail").value;
+      let enteredPass = document.querySelector("#enterPass").value;
+
+      if(email1 == enteredEmail && pass == enteredPass){
+        console.log("succes")
+        matchedData = true ;
+      }
+      if(matchedData){
+        setTimeout(function(){
+          window.location.href="dashboard.html"
+        },1000)
+       
+      }
+      
+    });
+    if(matchedData == false){
+      alert("Wrong Credentials")
+      document.querySelector("#enterPass").innerText="";
+    }
+   
+
+   }
+
     // footer js 
 
   document.querySelector("#imgdiv>div").addEventListener("click",function(){

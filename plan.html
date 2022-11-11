@@ -10,7 +10,7 @@
             font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif; 
         }
         #nav{
-            height: 20px;
+            height: 30px;
             background-color: #404040;
             display: flex;
             justify-content: space-between;
@@ -67,8 +67,25 @@
         }
 
         /* body css  */
+        #body{
+            width: 90%;
+            margin: auto;
+        }
+                               /* bottom section */
 
-
+         .audience-header{
+            background: rgba(249,190,0,0.25);
+            text-align: center;
+            padding: 8px 0;
+         } 
+         .card-title{
+            color: #333E48;
+            font-size: 16px;
+            font-weight: 500;
+        }    
+        .divflex{
+            display: flex;
+        }                 
         /* footer css  */
         #footer{
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -104,7 +121,11 @@
           margin-left: 20px;
         }
         
-      
+     
+
+
+
+
 
     </style>
 </head>
@@ -127,12 +148,100 @@
             
         </div>
     </div>
-<div>
 
-</div>
 <div id="container">
   <div id="body">
-    
+
+<!-- bottom section -->
+<h1 class="audience-header card-title">SurveyMonkey Audience includes access to Paid Features</h1>
+<div class="divflex">
+    <div class="">
+        <p class="">Get survey responses from around the world in minutes with <strong>SurveyMonkey Audience</strong></p>
+        <p class="">
+            Target the types of people you  want to hear from based on specific attributes, like country, gender, age, income, employment status, and more.
+        </p>
+        <a href="#" class="">
+            BUY TARGETED RESPONSES
+        </a>
+        <h2 class="">
+            Advanced survey design and analysis features are included in the price of your Audience project.
+        </h2>
+        <ul class="">
+            <li class="">
+                <div class=""></div>
+                <div class="">Unlimited number of surveys</div>
+            </li>
+            <li class="">
+                <div class=""></div>
+                <div class="">50 questions per survey</div>
+            </li>
+            <li class="">
+                <div class=""></div>
+                <div class="">Unlimited responses</div>
+            </li>
+            <li class="">
+                <div class=""></div>
+                <div class="">24/7 customer support via email</div>
+            </li>
+            <li class="">
+                <div class=""></div>
+                <div class="">Custom colors &amp; survey URL</div>
+            </li>
+            <li class="">
+                <div class=""></div>
+                <div class="">Data exports (CSV, PDF, PPT, XLS)</div>
+            </li>
+            <li class="">
+                <div class=""></div>
+                <div class="">Skip logic</div>
+            </li>
+            <li class="">
+                <div class=""></div>
+                <div class="">Question &amp; answer piping</div>
+            </li>
+            <li class="">
+                <div class=""></div>
+                <div class="">File upload</div>
+            </li>
+            <li class="">
+                <div class=""></div>
+                <div class="">A/B test text and images</div>
+            </li>
+            <li class="">
+                <div class=""></div>
+                <div class="">Hide SurveyMonkey footer</div>
+            </li>
+            <li class="">
+                <div class=""></div>
+                <div class="">Multilingual surveys</div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<hr>
+<h4>More about plans and pricing</h4>
+<div>
+    <div>
+        <h6>How much does SurveyMonkey cost?</h6>
+        <p>
+            The Basic plan is <br>
+            The Standard Monthly plan costs ₨ 899 a month.<br>
+            The Standard Annual plan costs ₨ 699 a month, billed annually.<br>
+            The Advantage plan costs ₨ 1,999 a month, billed annually.<br>
+            The Premier plan costs ₨ 4,999 a month, billed annually.<br>
+            The Team Advantage plan costs ₨ 1,550 a month, per user, billed annually.<br>
+            The Team Premier plan costs ₨ 3,800 a month, per user, billed annually.<br>
+        </p>
+    </div>
+    <div>
+        <h5>Do you offer discounts for teams?</h5>
+        <p>We offer discounts when you sign up for business plans that include 3 or more people. With Team Advantage and Team Premier plans, you’ll save 20% or more over personal plans and get access to additional collaboration features. See pricing </p>
+        <h5>Do you offer plans for corporate needs?</h5>
+        <p>Our Enterprise plans offer HIPAA compliance, advanced security, and admin features for increased governance and control. Contact sales</p>
+    </div>
+</div>
+
   </div>
 </div>
 
@@ -158,6 +267,9 @@
     window.location.href="dashboard.html"
   }) 
    document.querySelector("#mysurvey").addEventListener("click",function(){
+    window.location.href="surveypage.html"
+  })
+  document.querySelector("#survey").addEventListener("click",function(){
     window.location.href="surveypage.html"
   })
 </script>

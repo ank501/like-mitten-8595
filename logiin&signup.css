@@ -83,3 +83,6 @@ body{
     display: flex;
     justify-content: flex-end;
 }
+#signupSuccess{
+    color: #00bf6f;
+}
