@@ -1,0 +1,12 @@
+document.querySelector("#dashboard").addEventListener("click",function(){
+    window.location.href="dashboard.html"
+  }) 
+   document.querySelector("#mysurvey").addEventListener("click",function(){
+    window.location.href="surveypage.html"
+  })
+  document.querySelector("#survey").addEventListener("click",function(){
+    window.location.href="surveypage.html"
+  })
+  document.querySelector("#signoutbutton").addEventListener("click",function(){
+    window.location.href="index.html"
+  })

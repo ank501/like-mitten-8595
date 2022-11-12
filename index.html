@@ -13,25 +13,30 @@
     <!-- Nav bar div -->
     
         
-        <div>
+        <div id="navdiv1">
             <img src="images/logo dolphin final3.png" alt="logo" id="logo">
-            <div> <a href="#"> Create Survey </a></div>
-            <div><a href="#"> Collect Response </a></div>
-            <div> <a href="#"> Analyse Results </a></div>
+            <div> <a class="hove" href="login.html"> Create Survey </a></div>
+            <div ><a class="hove" href="login.html"> Collect Response </a></div>
+            <div > <a class="hove" href="login.html"> Analyse Results </a></div>
         </div>
            
-        <div>
-            <div><a href="#"> Plan&Pricing </a></div>
-            <div> <a href="#">Help&support </a></div>
-            <div>  <a href="#"> Company </a></div>
-           <div id="login"> <a href="#">log in</a></div>
-            <button id="signup"> Signup for free</button>
+        <div id="navdiv2">
+            <div ><a class="hove" href="login.html"> Plan&Pricing </a></div>
+            <div > <a  class="hove" href="login.html">Help&support </a></div>
+            <div >  <a class="hove" href="login.html"> Company </a></div>
+           <div id="login"> <a class="hove" href="login.html">log in</a></div>
+            <button  id="signup"> Signup for free</button>
         </div>
            
 
     </div>
     <div id="Top">
     <!-- Top Section bar -->
+    <div id="topdiv">
+        <h1>Will my product will success or flop ?</h1>
+        <p>A global leader in survey software. 20 million questions answered daily.</p>
+        <button class="ho" id="get-started">Get Started</button>
+    </div>
 
     </div>
     <div id="Mid">
@@ -44,13 +49,39 @@
         <img src="https://prod.smassets.net/assets/cms/sm/uploads//Verizon-logo-2x.png" alt="">
         <img src="https://prod.smassets.net/assets/cms/sm/uploads//sephora-logo.png" alt="">
     </div>
-    
+    <hr>
     <h3>Choose a plan that works for you</h3>
     <p>Get an individual plan with features that you need, or create a team instead!</p>
     <div id="planCards">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="ho" id="basic">
+            <div id="green">Basic</div>
+            <div>
+                   <h1 id="free">FREE</h1>
+                  <p class="pclass">Always Free</p>
+                  <button id="green-button">SignUp</button>
+                  <p class="pclass">Send unlimited surveys with up to 10 questions. Response limits apply.</p>
+            </div>
+        </div >
+        <div id="individualPlan">
+            <div id="blue">Individual Advantage</div>
+            <div>
+                    <h1>₹1,999</h1>
+                    <p>/Month</p>
+                  <p class="pclass">Billed ₹23,988 annually</p>
+                  <button id="blue-button">See All Features</button>
+                  <p class="pclass">Get our most popular features for creating, sending & analyzing surveys.</p>
+            </div>
+        </div>
+        <div id="Teamplan">
+            <div id="voilet" >Team Advantage</div>
+            <div>
+                    <h1>₹1,550</h1>
+                    <p>/Month</p>
+                  <p class="pclass">Starting at 3 users, billed annually</p>
+                  <button id="voilet-button">See All Features</button>
+                  <p class="pclass">Collaboration tools and survey features that help your team work more efficiently.</p>
+            </div>
+        </div>
     </div>
 
 
@@ -79,8 +110,6 @@
             <button>Visit GetFeedback</button>
         </div>
      </div>
-    
-    
     
     </div>
     <div id="Footer">
@@ -138,13 +167,4 @@
     </div>
 </body>
 </html>
-<script>
-    document.querySelector("#signup").addEventListener("click" , function(){
-        window.location.href="signup.html"
-    })
-    document.querySelector("#login").addEventListener("click" , function(){
-        window.location.href="login.html"
-    })
-    
-    
-</script>
+<script src="index.js"></script>

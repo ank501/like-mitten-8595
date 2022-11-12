@@ -1,3 +1,7 @@
+* {
+    font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif; 
+}
+
 #Footer{
     width: 80%;
     margin: auto;
@@ -57,35 +61,48 @@
 }
 
 #Nav{
-    font-size: smaller;
+    background-color: #5cb45b;
+    font-size: small;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 0px 0px 10px 10px;
+  
+    z-index: 999;
+    
 }
-#Nav *{
+#navdiv2{
     margin: 0px;
     padding: 0px;
     font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
     display:flex ;
     flex-direction: row;
+    justify-content: flex-end;
 }
+#navdiv1{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
+    display:flex ;
+    flex-direction: row;
+
+}
+
 
 #Nav div a{
  text-decoration: none;
- color: black;
- margin-top: 5px;
- 
+ color: rgb(0, 0, 0);
+ margin-top: 20px;
 }
 #Nav>div>div{
    padding: 4px , 8px;
    margin-left: 10px;
+   margin-top: 10px;
    margin-right: 10px;
    font-weight: bold;
    color: black;
-   font-size: x-small;
+   font-size: small;
    font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
-  
 }
 #Nav>div{
   width: 50%;
@@ -102,6 +119,7 @@
    border-radius: 2px;
    margin-bottom: 5px;
    font-weight: bold;
+   margin-top: 5px;
 
  
 }
@@ -109,6 +127,7 @@
   width: 15%;
 
 }
+
 #Mid>h3{
     font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
     text-align: center;
@@ -187,6 +206,10 @@ h3{
     transform: translate(-50%, -40%);
   
 }
+#Bottom{
+    margin-top: 50px;
+    margin-bottom:90px ;
+}
 
 #Bottom>div{
     width: 80%;
@@ -215,10 +238,139 @@ h3{
 #Bottom>div>div>button{
  
     background-color: white;
-   
     border-radius: 2px;
     border: 1px solid black;
     font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
     font-size: x-small;
     padding: 10px ,20px;
 }
+
+
+#basic ,#individualPlan ,#Teamplan{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    
+}
+
+#planCards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    width: 80%;
+    margin: auto;
+    line-height: 20px;
+    margin-bottom: 80px;
+    margin-top: 35px;
+}
+#planCards>div{
+background-color: rgb(247, 247, 247);
+}
+#blue{
+    background-color: rgb(75, 75, 232);
+    width: 100%;
+    height: 45px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 10px;
+    padding-top: 20px;
+
+   
+  }
+  #voilet{
+    background-color: rgb(72, 29, 111);
+    width: 100%;
+    height: 45px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 0px 50px 0px 50px ;
+    padding-top: 20px;
+  }
+
+  #green{
+    background-color: rgb(32, 168, 59);
+    width: 100%;
+    height: 45px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 50px 0px 50px  0px;
+    padding-top: 20px;
+  }
+#free{
+    color: rgb(32, 168, 59);
+    margin-bottom: 20px;
+}
+  #blue-button{
+
+    background-color: rgb(75, 75, 232);
+   color: rgb(255, 252, 252);
+   font-size: x-small;
+   padding: 8px 16px;
+   border: 0px;
+   border-radius: 5px;
+   margin-bottom: 5px;
+   font-weight: bold;
+   margin-bottom: 25px;
+  }
+  #green-button{
+    margin-bottom: 25px;
+    background-color: rgb(32, 168, 59);
+   color: rgb(255, 252, 252);
+   font-size: x-small;
+   padding: 8px 16px;
+   border: 0px;
+   border-radius: 5px;
+   margin-bottom: 25px;
+   font-weight: bold;
+  }
+  #voilet-button{
+    background-color: rgb(72, 29, 111);
+   color: rgb(255, 252, 252);
+   font-size: x-small;
+   padding: 8px 16px;
+   border: 0px;
+   border-radius: 5px;
+   margin-bottom: 5px;
+   font-weight: bold;
+   margin-bottom: 25px;
+  }
+  
+  .pclass{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  
+    
+  }
+
+
+  #topdiv{
+    text-align: center;
+    width: 100%;
+   margin-top: 110px;
+   margin-bottom: 110px;
+
+  }
+
+
+  #get-started{
+    
+    background-color: rgb(32, 168, 59);
+   color: rgb(255, 252, 252);
+   font-size:small;
+   padding: 15px 30px;
+   border: 0px;
+   border-radius: 5px;
+   margin-bottom: 25px;
+   font-weight: bold;
+  }
+  .hove:hover{
+    color: white;
+  }
+
+  .ho:nth-child(1):hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  #signup{
+
+  }

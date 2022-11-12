@@ -19,7 +19,7 @@
             <button class="hov" id="upgrade">Upgrade</button>
             <button class="hov" id="survey">Create Survey</button>
             <div  id="menuicon">
-                <div><img class="hov" src="images/icons8-circled-menu-24.png" alt=""></div>
+                <div><button id="signoutbutton">Sign Out</button></div>
                 <div><img class="hov" src="images/icons8-help-32.png" alt=""></div>
             </div>
            
@@ -85,7 +85,7 @@
 
         </div>
         <div id="bottom">
-             <div>
+             <div id="bottom-a">
                 <p>Your Profile </p>
                   <div>
                      <h3 id="user-email"></h3>
@@ -104,13 +104,25 @@
                      </table>
                   </div>
             </div>
-            <div>
+            <div id="bottom-b">
                 <p>Quick Poll</p>
                 <div>
+                <p>Which of these questions types will be easiest to answer on a mobile device?</p>
+                
+                <p>Open Ended Quetions</p>
+                <p>Star rating Question</p>
+                <p>Drop-down Menu Question</p>
+                <p>Matrix Quetions</p>
+      
+                 <p> What is this? We’re generally curious about all sorts of topics and like to ask questions to gather data. Don’t worry, your personal data will never be shared. Privacy Policy »
+                </p>
+                 
 
+                 
+               
                 </div>
             </div>
-            <div>
+            <div id="bottom-c">
                 <p>Survey Tips</p>
                 <div>
 
@@ -137,16 +149,4 @@
 
 </body>
 </html>
-<script>
-    document.querySelector("#mysurvey").addEventListener("click",function(){
-    window.location.href="surveypage.html"
-  })
-  document.querySelector("#plannav").addEventListener("click",function(){
-    window.location.href="plan.html"
-  })
-  document.querySelector("#dashboard").addEventListener("click",function(){
-    window.location.href="dashboard.html"
-  })
-
-
-</script>
+<script src="dashboard.js"></script>
