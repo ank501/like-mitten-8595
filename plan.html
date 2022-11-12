@@ -65,6 +65,22 @@
            margin-right: 10px;
            font-weight: bold;
         }
+        #upgrade:hover{
+    background-color: rgb(255, 136, 0);
+    color: rgb(0, 0, 0);
+}
+
+#signoutbutton:hover{
+    background-color: rgb(157, 245, 217);
+    color: blue;
+
+}
+
+
+#survey:hover{
+    background-color: black;
+    color: white;
+}
 
         /* body css  */
         #body{
@@ -141,7 +157,7 @@
             <button id="upgrade">Upgrade</button>
             <button id="survey">Create Survey</button>
             <div id="menuicon">
-                <div><img src="images/icons8-circled-menu-24.png" alt=""></div>
+                <div><button id="signoutbutton">Sign Out</button></div>
                 <div><img src="images/icons8-help-32.png" alt=""></div>
             </div>
            
@@ -262,14 +278,4 @@
 
 </body>
 </html>
-<script>
-      document.querySelector("#dashboard").addEventListener("click",function(){
-    window.location.href="dashboard.html"
-  }) 
-   document.querySelector("#mysurvey").addEventListener("click",function(){
-    window.location.href="surveypage.html"
-  })
-  document.querySelector("#survey").addEventListener("click",function(){
-    window.location.href="surveypage.html"
-  })
-</script>
+<script src="plan.js"></script>

@@ -1,0 +1,12 @@
+document.querySelector("#dashboard").addEventListener("click",function(){
+    window.location.href="dashboard.html"
+  })
+  document.querySelector("#plannav").addEventListener("click",function(){
+    window.location.href="plan.html"
+  })
+  document.querySelector("#upgrade").addEventListener("click",function(){
+    window.location.href="plan.html"
+  })
+  document.querySelector("#signoutbutton").addEventListener("click",function(){
+    window.location.href="index.html"
+  })
