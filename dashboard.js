@@ -7,6 +7,13 @@ document.querySelector("#mysurvey").addEventListener("click",function(){
   document.querySelector("#dashboard").addEventListener("click",function(){
     window.location.href="dashboard.html"
   })
+  
   document.querySelector("#signoutbutton").addEventListener("click",function(){
     window.location.href="index.html"
   })
+
+  let y = JSON.parse(localStorage.getItem("user-data"))
+  console.log(y)
+
+  document.querySelector("#user-email").innerText =y[0].email
+  document.querySelector("#user-email-p").innerText =y[0].email

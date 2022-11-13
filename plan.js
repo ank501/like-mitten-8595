@@ -10,3 +10,13 @@ document.querySelector("#dashboard").addEventListener("click",function(){
   document.querySelector("#signoutbutton").addEventListener("click",function(){
     window.location.href="index.html"
   })
+  document.querySelector("#blue-button").addEventListener("click",function(){
+    window.location.href="payment.html"
+  })
+  document.querySelector("#green-button").addEventListener("click",function(){
+    window.location.href="payment.html"
+  })
+  document.querySelector("#voilet-button").addEventListener("click",function(){
+    window.location.href="payment.html"
+  })
+ 
