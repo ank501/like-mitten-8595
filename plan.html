@@ -137,8 +137,166 @@
           margin-left: 20px;
         }
         
-     
+        #basic ,#individualPlan ,#Teamplan{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    
+}
 
+#planCards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    width: 80%;
+    margin: auto;
+    line-height: 20px;
+    margin-bottom: 80px;
+    margin-top: 35px;
+}
+#planCards>div{
+background-color: rgb(247, 247, 247);
+}
+#blue{
+    background-color: rgb(75, 75, 232);
+    width: 100%;
+    height: 45px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 10px;
+    padding-top: 20px;
+
+   
+  }
+  #voilet{
+    background-color: rgb(72, 29, 111);
+    width: 100%;
+    height: 45px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 0px 50px 0px 50px ;
+    padding-top: 20px;
+  }
+
+  #signoutbutton:hover{
+background-color: rgb(157, 245, 217);
+color: blue;
+
+}
+#signoutbutton{
+background-color: rgb(0, 255, 174);
+color: rgb(31, 31, 31);
+font-size: x-small;
+padding: 8px 8px;
+border: 0px;
+border-radius: 2px;
+margin-right: 10px;
+font-weight: bold;
+}
+  #green{
+    background-color: rgb(32, 168, 59);
+    width: 100%;
+    height: 45px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 50px 0px 50px  0px;
+    padding-top: 20px;
+  }
+#free{
+    color: rgb(32, 168, 59);
+    margin-bottom: 20px;
+}
+  #blue-button{
+
+    background-color: rgb(75, 75, 232);
+   color: rgb(255, 252, 252);
+   font-size: small;
+   padding: 10px 30px;
+   border: 0px;
+   border-radius: 5px;
+   margin-bottom: 5px;
+   font-weight: bold;
+   margin-bottom: 25px;
+  }
+  #green-button{
+    margin-bottom: 25px;
+    background-color: rgb(32, 168, 59);
+   color: rgb(255, 252, 252);
+   font-size:small;
+   padding: 8px 30px;
+   border: 0px;
+   border-radius: 5px;
+   margin-bottom: 25px;
+   font-weight: bold;
+  }
+  #voilet-button{
+    background-color: rgb(72, 29, 111);
+   color: rgb(255, 252, 252);
+   font-size: small;
+   padding: 10px 30px;
+   border: 0px;
+   border-radius: 5px;
+   margin-bottom: 5px;
+   font-weight: bold;
+   margin-bottom: 25px;
+  }
+  
+  .pclass{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  
+    
+  }
+
+
+  #topdiv{
+    text-align: center;
+    width: 100%;
+   margin-top: 110px;
+   margin-bottom: 110px;
+
+  }
+
+
+  #get-started{
+    
+    background-color: rgb(32, 168, 59);
+   color: rgb(255, 252, 252);
+   font-size:small;
+   padding: 15px 30px;
+   border: 0px;
+   border-radius: 5px;
+   margin-bottom: 25px;
+   font-weight: bold;
+  }
+  .hove:hover{
+    color: white;
+  }
+
+  .ho:nth-child(1):hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  #signup{
+
+  }
+
+#bottomdiv{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+line-height: 30px;
+padding: 20px;
+gap: 20px;
+border: 1px solid gray;
+margin-bottom: 30px;
+}
+#pandp{
+text-align: center;
+}
+#body>h3 , #body>p{
+    text-align: center;
+    margin-top: 40px;
+}
 
 
 
@@ -167,98 +325,71 @@
 
 <div id="container">
   <div id="body">
-
-<!-- bottom section -->
-<h1 class="audience-header card-title">SurveyMonkey Audience includes access to Paid Features</h1>
-<div class="divflex">
-    <div class="">
-        <p class="">Get survey responses from around the world in minutes with <strong>SurveyMonkey Audience</strong></p>
-        <p class="">
-            Target the types of people you  want to hear from based on specific attributes, like country, gender, age, income, employment status, and more.
-        </p>
-        <a href="#" class="">
-            BUY TARGETED RESPONSES
-        </a>
-        <h2 class="">
-            Advanced survey design and analysis features are included in the price of your Audience project.
-        </h2>
-        <ul class="">
-            <li class="">
-                <div class=""></div>
-                <div class="">Unlimited number of surveys</div>
-            </li>
-            <li class="">
-                <div class=""></div>
-                <div class="">50 questions per survey</div>
-            </li>
-            <li class="">
-                <div class=""></div>
-                <div class="">Unlimited responses</div>
-            </li>
-            <li class="">
-                <div class=""></div>
-                <div class="">24/7 customer support via email</div>
-            </li>
-            <li class="">
-                <div class=""></div>
-                <div class="">Custom colors &amp; survey URL</div>
-            </li>
-            <li class="">
-                <div class=""></div>
-                <div class="">Data exports (CSV, PDF, PPT, XLS)</div>
-            </li>
-            <li class="">
-                <div class=""></div>
-                <div class="">Skip logic</div>
-            </li>
-            <li class="">
-                <div class=""></div>
-                <div class="">Question &amp; answer piping</div>
-            </li>
-            <li class="">
-                <div class=""></div>
-                <div class="">File upload</div>
-            </li>
-            <li class="">
-                <div class=""></div>
-                <div class="">A/B test text and images</div>
-            </li>
-            <li class="">
-                <div class=""></div>
-                <div class="">Hide SurveyMonkey footer</div>
-            </li>
-            <li class="">
-                <div class=""></div>
-                <div class="">Multilingual surveys</div>
-            </li>
-        </ul>
-    </div>
+    <h3>Choose a plan that works for you</h3>
+    <p>Get an individual plan with features that you need, or create a team instead!</p>
+    <div id="planCards">
+        <div class="ho" id="basic">
+            <div id="green">Basic</div>
+            <div>
+                   <h1 id="free">FREE</h1>
+                  <p class="pclass">Always Free</p>
+                  <button id="green-button">Select</button>
+                  <p class="pclass">Send unlimited surveys with up to 10 questions. Response limits apply.</p>
+            </div>
+        </div >
+        <div id="individualPlan">
+            <div id="blue">Individual Advantage</div>
+            <div>
+                    <h1>₹1,999</h1>
+                    <p>/Month</p>
+                  <p class="pclass">Billed ₹23,988 annually</p>
+                  <button id="blue-button">Select</button>
+                  <p class="pclass">Get our most popular features for creating, sending & analyzing surveys.</p>
+            </div>
+        </div>
+        <div id="Teamplan">
+            <div id="voilet" >Team Advantage</div>
+            <div>
+                    <h1>₹1,550</h1>
+                    <p>/Month</p>
+                  <p class="pclass">Starting at 3 users, billed annually</p>
+                  <button id="voilet-button">Select</button>
+                  <p class="pclass">Collaboration tools and survey features that help your team work more efficiently.</p>
+            </div>
+        </div> 
 </div>
 
-<hr>
-<h4>More about plans and pricing</h4>
-<div>
-    <div>
-        <h6>How much does SurveyMonkey cost?</h6>
-        <p>
-            The Basic plan is <br>
-            The Standard Monthly plan costs ₨ 899 a month.<br>
-            The Standard Annual plan costs ₨ 699 a month, billed annually.<br>
-            The Advantage plan costs ₨ 1,999 a month, billed annually.<br>
-            The Premier plan costs ₨ 4,999 a month, billed annually.<br>
-            The Team Advantage plan costs ₨ 1,550 a month, per user, billed annually.<br>
-            The Team Premier plan costs ₨ 3,800 a month, per user, billed annually.<br>
-        </p>
-    </div>
-    <div>
-        <h5>Do you offer discounts for teams?</h5>
-        <p>We offer discounts when you sign up for business plans that include 3 or more people. With Team Advantage and Team Premier plans, you’ll save 20% or more over personal plans and get access to additional collaboration features. See pricing </p>
-        <h5>Do you offer plans for corporate needs?</h5>
-        <p>Our Enterprise plans offer HIPAA compliance, advanced security, and admin features for increased governance and control. Contact sales</p>
-    </div>
-</div>
 
-  </div>
+<!-- botttom section  -->
+
+<h2 id="pandp">
+    More about plan and pricing
+</h2>
+<div id="bottomdiv">
+    <div>
+        How much does SurveyMonkey cost?<br>
+
+        The Basic plan is <br>
+        
+        The Standard Monthly plan costs ₨ 899 a month. <br>
+
+        The Standard Annual plan costs ₨ 699 a month, billed annually. <br>
+
+        The Advantage plan costs ₨ 1,999 a month, billed <br>
+
+        The Premier plan costs ₨ 4,999 a month, billed annually. <br>
+
+        The Team Advantage plan costs ₨ 1,550 a month, per user, billed annually. <br>
+
+        The Team Premier plan costs ₨ 3,800 a month, per user, billed annually. <br>
+    </div>
+    <div>
+        Do you offer discounts for teams?<br>
+        We offer discounts when you sign up for business plans that include 3 or more people. With Team Advantage and Team Premier plans, you’ll save 20% or more over personal plans and get access to additional collaboration <br> See pricing 
+        
+        Do you offer plans for corporate needs?<br>
+        Our Enterprise plans offer HIPAA compliance, advanced security, and admin features for increased governance and control. Contact sales
+    </div>
 </div>
 
 
